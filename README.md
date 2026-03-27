@@ -25,7 +25,7 @@ reverse_string("Python") # will output: nohtyP
 - Looping through strings (if attempting the bonus)
 - Function definition and return values
 ### Stretch Ideas
-- [ ] Add a feature that ignores whitespace or punctuation
-- [ ] Make the function work for lists as well as strings
+- [x] Add a feature that ignores whitespace or punctuation
+- [x] Make the function work for lists as well as strings
 - [ ] Compare the performance of slicing vs loop methods for long strings
-- [ ] This one may seem simple, but thinking about different ways to solve it builds fluency — and will help with trickier string problems later.
+This one may seem simple, but thinking about different ways to solve it builds fluency — and will help with trickier string problems later.
