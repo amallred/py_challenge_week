@@ -63,7 +63,7 @@ is_palindrome("A man a plan a canal Panama") # Output: True
 ### Stretch Ideas
 - [ ] Use regular expressions to remove all non-alphanumeric characters
 - [ ] Adapt the function to check if a number is a palindrome
-- [ ] Return a message instead of a Boolean (e.g., "Yes, it's a palindrome!")
+- [x] Return a message instead of a Boolean (e.g., "Yes, it's a palindrome!")
 - [ ] Make the function case-insensitive without altering the original input
 - [ ] I still want to figure out removing punctuation
 
