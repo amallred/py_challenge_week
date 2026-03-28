@@ -105,3 +105,45 @@ find_max([42])  #Output : 42
 - [ ] Rewrite it using a while loop instead of a for loop
 
 Hint: You’ll need a variable to hold the current highest number as you loop through the list and update it whenever you find a bigger one.
+
+---
+
+## Challenge: Prime Time
+### Problem
+Write a function that checks whether a number is prime. A prime number is a number greater than 1 that has no divisors other than 1 and itself.
+#### File:
+prime.py
+
+## Examples
+
+```
+is_prime(2)     #Output: True 
+is_prime(11)  #Output: True  
+is_prime(15)  #Output: False  
+is_prime(1)  #Output:  False  
+is_prime(0) #Output:  False  
+```
+### Your Task
+Define a function called is_prime that takes one integer as input.
+Return True if the number is prime and False otherwise.
+Use a loop to check divisibility — don’t use any external libraries or built-in prime checkers.
+
+### Concepts Tested
+- Conditional logic
+- Loops
+- Modulo operator (%)
+- Efficiency and edge case handling
+
+### Stretch Ideas
+- [ ] Improve performance by only looping up to the square root of the number
+- [ ] Write a second function that returns all prime numbers up to a given number
+- [ ] Accept user input and check multiple numbers in one run
+- [ ] Save all prime results to a file
+
+### Hints:
+- Any number less than 2 is not prime.
+- Use % to check for divisibility.
+- If any number between 2 and n-1 divides evenly into n, it’s not prime.
+
+### Why It Matters
+Prime checks are a classic example of how math and code intersect. They’re useful in cryptography, number theory, and performance testing. And they’re a great way to practice clean looping logic and working with conditionals.
