@@ -68,3 +68,40 @@ is_palindrome("A man a plan a canal Panama") # Output: True
 - [ ] I still want to figure out removing punctuation
 
 This is a great real-world-style logic challenge that builds on your string handling skills — and also prepares you for upcoming projects where cleaning and normalizing data is key.
+
+---
+
+## Challenge: Find the Max
+### Problem
+Write a function that takes a list of numbers and returns the maximum value in the list — the largest number.
+#### File
+max.py
+
+### Examples
+
+```
+find_max([4, 9, 1, 17, 2])   #Output : 17  
+find_max([-5, -9, -2, -12]) #Output :  -2  
+find_max([42])  #Output : 42
+```
+
+### Your Task
+- Define a function called `find_max` that accepts a list of integers or floats.
+- Return the largest number in the list.
+- Do not use the built-in `max()` function — try to solve it manually using:
+  - A `for` loop to check each number
+  - A variable to track the current maximum
+  - A `for` loop to check each number
+  - A variable to track the current maximum
+### Concepts Tested
+- Looping through a list
+- Comparison and conditional logic
+- List handling
+- Defensive programming (optional)
+### Stretch Ideas
+- [ ] Add error handling for empty lists
+- [x] Allow the function to work with mixed positive and negative values
+- [ ] Return both the max value and its index in the list
+- [ ] Rewrite it using a while loop instead of a for loop
+
+Hint: You’ll need a variable to hold the current highest number as you loop through the list and update it whenever you find a bigger one.
