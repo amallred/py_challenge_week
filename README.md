@@ -229,8 +229,10 @@ text_count.py
 - Dictionaries and loops
 
 ### Stretch Ideas
-- [ ] Sort the output by most frequent words
-- [ ] Ignore very common stop words like “the,” “and,” etc.
+- [x] Sort the output by most frequent words
+- [x] Ignore very common stop words like “the,” “and,” etc.
 - [ ] Save the results to a new file
 
+### Note
+- This filters out contractions
 ---
