@@ -65,7 +65,7 @@ is_palindrome("A man a plan a canal Panama") # Output: True
 - [ ] Adapt the function to check if a number is a palindrome
 - [x] Return a message instead of a Boolean (e.g., "Yes, it's a palindrome!")
 - [ ] Make the function case-insensitive without altering the original input
-- [ ] I still want to figure out removing punctuation
+- [ ] *I still want to figure out removing punctuation
 
 This is a great real-world-style logic challenge that builds on your string handling skills — and also prepares you for upcoming projects where cleaning and normalizing data is key.
 
@@ -196,3 +196,41 @@ caesar_cipher("Hello, World!", 5) #Output:  "Mjqqt, Btwqi!"
 ### Why It Matters
 Understanding the Caesar cipher helps you practice control flow, ASCII manipulation, and the modulo operator — all fundamental tools in Python. While the cipher itself is simple, the logic behind correctly shifting characters while preserving case and punctuation is a great test of your programming clarity.
 
+---
+# Bonus Challenges
+## Challenge: Count Word Frequency in a Text File
+### Problem
+Write a function that reads a .txt file and counts how many times each word appears. Return a dictionary where the keys are words and the values are the number of times they appear.
+
+#### Example
+
+Given a file with:
+
+"The cat and the hat."
+
+Your output might be:
+
+``` 
+{'the': 2, 'cat': 1, 'and': 1, 'hat': 1}
+```
+#### File:
+text_count.py
+
+### Your Task
+- Open and read a .txt file (you can create a small practice file if needed)
+- Normalize the text (e.g., lowercase, remove punctuation)
+- Split the text into words
+- Use a dictionary to count word frequencies
+- Return or print the dictionary
+
+### Concepts Tested
+- File reading
+- String cleanup
+- Dictionaries and loops
+
+### Stretch Ideas
+- [ ] Sort the output by most frequent words
+- [ ] Ignore very common stop words like “the,” “and,” etc.
+- [ ] Save the results to a new file
+
+---
