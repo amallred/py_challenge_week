@@ -182,7 +182,7 @@ caesar_cipher("Hello, World!", 5) #Output:  "Mjqqt, Btwqi!"
 - Control flow and logic
 
 ### Stretch Ideas
-- [ ]Add a second function to decode messages by shifting in the opposite direction
+- [x]Add a second function to decode messages by shifting in the opposite direction
 - [ ]Allow the user to input text and shift value
 - [x]Handle very large or negative shift values
 - [ ]Save the encoded message to a file

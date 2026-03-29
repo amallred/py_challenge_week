@@ -21,12 +21,28 @@ def caesar_cipher(text,key):
     return translated
 
 ''' 
-I had to alter the reference code to account for if the character was upper or lower case
+I altered the reference code to account for readability and to account for if the character was upper or lower case
 '''
+
+def decode_cipher(text, key):
+    translated = ''
+    for char in text:
+        if char.islower():
+            translated += chr((ord(char) - 97 - key) % 26 + 97)
+        elif char.isupper():
+            translated += chr((ord(char) - 65 - key) % 26 + 65)
+        else: 
+            translated += char
+    return translated
+
 
 print(caesar_cipher("abc", 3)) #Output:  "def"  
 print(caesar_cipher("xyz", 2)) #Output:  "zab"  
 print(caesar_cipher("Hello, World!", 5)) #Output:  "Mjqqt, Btwqi!"
+
+print(decode_cipher("def", 3)) #Output:  "abc"  
+print(decode_cipher("zab", 2)) #Output:  "xyz"  
+print(decode_cipher("Mjqqt, Btwqi!", 5)) #Output:  "Hello, World!"
 
 
 '''
