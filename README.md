@@ -147,3 +147,52 @@ Use a loop to check divisibility — don’t use any external libraries or built
 
 ### Why It Matters
 Prime checks are a classic example of how math and code intersect. They’re useful in cryptography, number theory, and performance testing. And they’re a great way to practice clean looping logic and working with conditionals.
+
+--- 
+
+## Challenge: Caesar Cipher Encoder
+### Problem
+A Caesar cipher is a simple encryption technique where each letter in a message is shifted a fixed number of places down the alphabet. For example, shifting "a" by 3 gives you "d".
+
+Write a function that takes a string and a shift value and returns the encoded message using the Caesar cipher.
+#### File:
+cipher.py
+
+### Examples
+```
+caesar_cipher("abc", 3) #Output:  "def"  
+caesar_cipher("xyz", 2) #Output:  "zab"  
+caesar_cipher("Hello, World!", 5) #Output:  "Mjqqt, Btwqi!"
+```
+
+### Your Task
+- Define a function called caesar_cipher that accepts:
+  - a string text
+  - an integer shift
+- Return a new string with each alphabetical character shifted by the shift amount.
+- Keep the case (uppercase/lowercase) the same.
+- Do not change non-letter characters like punctuation, spaces, or numbers.
+  - a string text
+  - an integer shift
+
+### Concepts Tested
+- String manipulation
+- Character encoding with `ord()` and `chr()`
+- Modulo math for wrapping the alphabet
+- Control flow and logic
+
+### Stretch Ideas
+- [ ]Add a second function to decode messages by shifting in the opposite direction
+- [ ]Allow the user to input text and shift value
+- [ ]Handle very large or negative shift values
+- [ ]Save the encoded message to a file
+
+### Hints:
+- Use `ord()` to get the Unicode value of a character.
+- Use `chr()` to convert back to a character.
+- Wrap around the alphabet using % 26 when needed.
+- Make sure to handle both uppercase and lowercase letters correctly.
+
+### Why It Matters
+Understanding the Caesar cipher helps you practice control flow, ASCII manipulation, and the modulo operator — all fundamental tools in Python. While the cipher itself is simple, the logic behind correctly shifting characters while preserving case and punctuation is a great test of your programming clarity.
+
