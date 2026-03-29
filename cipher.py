@@ -9,23 +9,25 @@ Create a Caesar cipher
     # This changes the letter to the unicode int, adds the shift, then converts back to a letter
     # This works, but shifts out of the alphabet and into special characters
 
-
-# Source - https://stackoverflow.com/a/30825099
-# Posted by Aditya, modified by community. See post 'Timeline' for change history
-# Retrieved 2026-03-29, License - CC BY-SA 3.0
-
 def caesar_cipher(text,key):
-    return "".join([
-        chr((ord(i) - 97 + key) % 26 + 97) 
-        if (ord(i) <= 123 and ord(i) >= 97) 
-        or (ord(i) <= 91 and ord(i) >= 65) 
-        else i for i in text
-        ])
+    translated = ''
+    for char in text:
+        if char.islower():
+            translated += chr((ord(char) - 97 + key) % 26 + 97)
+        elif char.isupper():
+            translated += chr((ord(char) - 65 + key) % 26 + 65)
+        else: 
+            translated += char
+    return translated
 
+''' 
+I had to alter the reference code to account for if the character was upper or lower case
+'''
 
 print(caesar_cipher("abc", 3)) #Output:  "def"  
 print(caesar_cipher("xyz", 2)) #Output:  "zab"  
 print(caesar_cipher("Hello, World!", 5)) #Output:  "Mjqqt, Btwqi!"
+
 
 '''
 References: 
