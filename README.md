@@ -65,7 +65,6 @@ is_palindrome("A man a plan a canal Panama") # Output: True
 - [ ] Adapt the function to check if a number is a palindrome
 - [x] Return a message instead of a Boolean (e.g., "Yes, it's a palindrome!")
 - [ ] Make the function case-insensitive without altering the original input
-- [ ] *I still want to figure out removing punctuation
 
 This is a great real-world-style logic challenge that builds on your string handling skills — and also prepares you for upcoming projects where cleaning and normalizing data is key.
 
@@ -235,4 +234,32 @@ text_count.py
 
 ### Note
 - This filters out contractions
+
 ---
+
+## Challenge: Write and Save a Simple Log File
+### Problem
+Build a simple program that asks the user for input (e.g., a message or activity) and writes it to a log file along with the current timestamp.
+#### File:
+log.py
+
+#### Example
+
+```User input: Took a break and had coffee.  
+→ Written to file as: [2025-06-24 10:03:00] Took a break and had coffee.
+``` 
+
+### Your Task
+- Prompt the user to enter a message
+- Get the current time using datetime
+- Append the message and timestamp to a log file (log.txt)
+
+### Concepts Tested
+- User input
+- File writing with append mode ('a')
+- Using the datetime module
+
+### Stretch Ideas
+- [ ] Let the user view the log file contents
+- [ ] Categorize messages (e.g., “Work”, “Break”, “Note”)
+- [ ] Add an option to clear the log
