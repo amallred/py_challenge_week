@@ -260,6 +260,6 @@ log.py
 - Using the datetime module
 
 ### Stretch Ideas
-- [ ] Let the user view the log file contents
+- [x] Let the user view the log file contents
 - [ ] Categorize messages (e.g., “Work”, “Break”, “Note”)
-- [ ] Add an option to clear the log
+- [x] Add an option to clear the log
