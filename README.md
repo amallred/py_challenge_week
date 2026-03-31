@@ -263,3 +263,35 @@ log.py
 - [x] Let the user view the log file contents
 - [ ] Categorize messages (e.g., “Work”, “Break”, “Note”)
 - [x] Add an option to clear the log
+
+---
+
+## Challenge: Build a Basic Calculator
+### Problem
+Create a menu-driven calculator that lets the user choose an operation (add, subtract, multiply, divide), enter two numbers, and get the result.
+#### File
+calculator.py
+
+#### Example
+
+```Choose operation: add  
+Enter first number: 4  
+Enter second number: 5  
+Result: 9
+``` 
+
+### Your Task
+- Write a function for each operation
+- Prompt the user to select an operation and input numbers
+- Display the result
+- Handle invalid inputs and division by zero
+
+### Concepts Tested
+- Functions
+- Conditional logic
+- Input handling
+
+### Stretch Ideas
+- [ ] Allow the user to keep using the calculator until they type "exit"
+- [ ] Save calculations to a log file
+- [ ] Add support for more operations like exponents or modulus
